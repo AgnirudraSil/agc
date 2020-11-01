@@ -12,7 +12,7 @@ export default function Select() {
         if (!token) return logout()
 
         try {
-            const response = await axios.get(`http://localhost:5000/generate-paper?grade=${grade.current.value.substring(5)}`, {
+            const response = await axios.get(`http://sipabacuskvh.et.r.appspot.com/generate-paper?grade=${grade.current.value.substring(5)}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`
