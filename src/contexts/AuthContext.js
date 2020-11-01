@@ -15,7 +15,7 @@ export function AuthContextProvider({ children }) {
         setLoading(true)
         setError('')
 
-        fetch('http://localhost:5000/auth/signup', {
+        fetch('http://sipabacuskvh.et.r.appspot.com/auth/signup', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ export function AuthContextProvider({ children }) {
         setLoading(true)
         setError('')
 
-        fetch('http://localhost:5000/auth/login', {
+        fetch('http://sipabacuskvh.et.r.appspot.com/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
