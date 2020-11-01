@@ -17,7 +17,7 @@ export default function App() {
     useEffect(() => {
         const jwtToken = localStorage.getItem('token')
         if (!jwtToken) return logout()
-        axios.get(`http://localhost:5000/generate-paper?grade=${grade.substring(5)}`, {
+        axios.get(`http://sipabacuskvh.et.r.appspot.com/generate-paper?grade=${grade.substring(5)}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${jwtToken}`
